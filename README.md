@@ -33,14 +33,14 @@ Traditional OCR models like TrOCR offer high accuracy but are computationally he
 ```
 
 ocr-distillation-app/
--├── app.py                   # Streamlit web app
--├── teacher\_model/           # Teacher model files
--├── student\_model/           # Student model files
--├── data/                    # Receipt image data
--├── utils/                   # Preprocessing and helper scripts
--├── train/                   # Training scripts
--├── requirements.txt         # Python dependencies
--└── README.md
+├── app.py                   # Streamlit web app
+├── teacher\_model/           # Teacher model files
+├── student\_model/           # Student model files
+├── data/                    # Receipt image data
+├── utils/                   # Preprocessing and helper scripts
+├── train/                   # Training scripts
+├── requirements.txt         # Python dependencies
+└── README.md
 
 ````
 
@@ -80,12 +80,6 @@ This project is built to understand:
 * Knowledge distillation in deep learning
 * Compression trade-offs in OCR
 * Deployment of ML models via interactive apps
-
----
-
-## 📄 License
-
-MIT License
 
 ---
 
