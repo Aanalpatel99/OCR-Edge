@@ -33,14 +33,14 @@ Traditional OCR models like TrOCR offer high accuracy but are computationally he
 ```
 
 ocr-distillation-app/
-├── app.py                   # Streamlit web app
-├── teacher\_model/           # Teacher model files
-├── student\_model/           # Student model files
-├── data/                    # Receipt image data
-├── utils/                   # Preprocessing and helper scripts
-├── train/                   # Training scripts
-├── requirements.txt         # Python dependencies
-└── README.md
+-├── app.py                   # Streamlit web app
+-├── teacher\_model/           # Teacher model files
+-├── student\_model/           # Student model files
+-├── data/                    # Receipt image data
+-├── utils/                   # Preprocessing and helper scripts
+-├── train/                   # Training scripts
+-├── requirements.txt         # Python dependencies
+-└── README.md
 
 ````
 
@@ -59,7 +59,7 @@ ocr-distillation-app/
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/lightocr.git
+git clone https://github.com/Aanalpatel99/lightocr.git
 cd lightocr
 
 # Set up environment
