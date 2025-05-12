@@ -1,6 +1,6 @@
 ### 🔤 **OCR-Edge**
 
-```markdown
+markdown
 # 🧠 OCR-Edge: Knowledge Distillation for Lightweight Receipt OCR
 
 OCR-Edge is a deep learning project that demonstrates how to apply **knowledge distillation** to compress a large OCR model into a smaller, faster one without drastically sacrificing performance.
@@ -11,7 +11,7 @@ This project is designed to scan and extract text from receipts using a distille
 
 ## 🔍 Overview
 
-Traditional OCR models like TrOCR offer high accuracy but are computationally heavy. LightOCR solves this by:
+Traditional OCR models like TrOCR offer high accuracy but are computationally heavy. OCR-Edge solves this by:
 - Fine-tuning a **teacher model** (transformer-based)
 - Training a **student model** (CNN+LSTM) using **soft labels** from the teacher
 - Comparing performance and running time
@@ -59,8 +59,8 @@ ocr-distillation-app/
 
 ```bash
 # Clone the repo
-git clone https://github.com/Aanalpatel99/lightocr.git
-cd lightocr
+git clone https://github.com/Aanalpatel99/OCR-Edge.git
+cd OCR-Edge
 
 # Set up environment
 python -m venv venv
