@@ -1,4 +1,3 @@
-````markdown
 # 🖼️ OCR-Edge
 
 A lightweight Optical Character Recognition (OCR) system built using a Student-Teacher model approach, optimized for edge devices. The project leverages a distilled Mini TrOCR model to achieve efficient, accurate OCR predictions in real time.
@@ -13,8 +12,6 @@ A lightweight Optical Character Recognition (OCR) system built using a Student-T
 - 💡 Compatible with CPU-only machines
 - 🧠 VisionEncoderDecoder architecture (TrOCR-based)
 - 🔗 Separate UI and backend for scalable deployment
-
----
 
 ## 🛠️ Setup
 
