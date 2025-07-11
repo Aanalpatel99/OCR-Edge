@@ -1,0 +1,52 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Jupyter and VS Code
+.ipynb_checkpoints/
+.vscode/
+*.code-workspace
+
+# Environment & Package Management
+.env
+.venv/
+env/
+venv/
+Pipfile.lock
+poetry.lock
+
+# Hugging Face cache (optional if you don't want local cache tracked)
+hf_cache/
+~/.cache/huggingface/
+
+# Checkpoints & model weights (upload to Hugging Face instead)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Large files and data
+data/
+datasets/
+*.zip
+*.tar.gz
+
+# Logs
+*.log
+logs/
+wandb/
+*.ckpt
+*.tmp
+
+# System
+.DS_Store
+Thumbs.db
+
+# OS-specific
+desktop.ini
+
+# Notebook metadata (optional)
+*.nbconvert.ipynb
