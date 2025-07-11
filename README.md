@@ -93,5 +93,3 @@ or reachout to me on linkedin
 ## 📜 License
 
 MIT License – use it, modify it, share it!
-
-```
