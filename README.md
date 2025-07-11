@@ -56,7 +56,7 @@ You'll be prompted to enter the path of an image. The model will output the pred
 
 The distilled OCR model is hosted on Hugging Face:
 
-➡️ [https://huggingface.co/Aanal21/StudentModel-EdgeOCR](https://huggingface.co/Aanal21/StudentModel-EdgeOCR)
+➡️ [https://huggingface.co/Aanal21/StudentModel-EdgeOCR](https://huggingface.co/Aanal21/TeacherModel-EdgeOCR)
 
 The model is automatically downloaded and cached using `from_pretrained()` during inference.
 
@@ -88,7 +88,8 @@ OCR-Edge/
 Feel free to reach out or open an issue if you have questions!
 
 👤 [Aanal Patel](https://github.com/Aanalpatel99)
-📧 [analpatel.dev@gmail.com](mailto:analpatel.dev@gmail.com)
+📧 [analpatel.dev@gmail.com](mailto:aanalpatel445566@gmail.com)
+or reachout to me on linkedin
 
 ---
 
