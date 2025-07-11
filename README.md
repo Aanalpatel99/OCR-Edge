@@ -85,7 +85,7 @@ OCR-Edge/
 Feel free to reach out or open an issue if you have questions!
 
 👤 [Aanal Patel](https://github.com/Aanalpatel99)
-📧 [analpatel.dev@gmail.com](mailto:aanalpatel445566@gmail.com)
+📧 [aanalpatel445566@gmail.com](mailto:aanalpatel445566@gmail.com)
 or reachout to me on linkedin
 
 ---
