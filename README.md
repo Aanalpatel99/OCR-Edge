@@ -1,54 +1,95 @@
-# Receipt Scanner Website
+# 🖼️ OCR-Edge
 
-A simple web-based receipt scanner that uses OCR (Optical Character Recognition) to extract text and data from receipt images.
+A lightweight Optical Character Recognition (OCR) system built using a Student-Teacher model approach, optimized for edge devices. The project leverages a distilled Mini TrOCR model to achieve efficient, accurate OCR predictions in real time.
 
-## Features
+---
 
-- 📸 **Image Upload**: Upload receipt images from your device
-- 🔍 **OCR Processing**: Extract text using Tesseract.js
-- 📊 **Data Extraction**: Automatically parse receipt data including:
-  - Store name
-  - Date
-  - Individual items and prices
-  - Total amount
-- 📱 **Responsive Design**: Works on desktop and mobile devices
-- ⚡ **Real-time Processing**: No server required, all processing done in browser
+## 🔍 Features
 
-## How to Use
+- ✅ Student-Teacher knowledge distillation for lightweight OCR
+- 📦 Student model hosted on [Hugging Face](https://huggingface.co/Aanal21/StudentModel-EdgeOCR)
+- 🖼️ Easy command-line interface for inference
+- 💡 Compatible with CPU-only machines
+- 🧠 VisionEncoderDecoder architecture (TrOCR-based)
+- 🔗 Separate UI and backend for scalable deployment
 
-1. Open `index.html` in your web browser
-2. Click "Choose Receipt Image" to select a receipt photo
-3. Click "Scan Receipt" to process the image
-4. View the extracted data in the results area
+## 🛠️ Setup
 
-## Technologies Used
+### 1. Clone the Repository
 
-- **HTML5**: Structure and markup
-- **CSS3**: Styling and responsive design
-- **JavaScript**: Client-side functionality
-- **Tesseract.js**: OCR processing library
+```bash
+git clone https://github.com/Aanalpatel99/OCR-Edge.git
+cd OCR-Edge
+````
 
-## Setup
+### 2. Create a Python Environment
 
-1. Clone this repository
-2. Open `index.html` in a web browser
-3. No additional setup required!
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-## Hosting on GitHub Pages
+### 3. Install Dependencies
 
-This website is designed to be hosted on GitHub Pages:
+```bash
+pip install -r requirements.txt
+```
 
-1. Push this code to a GitHub repository
-2. Enable GitHub Pages in repository settings
-3. Your site will be live at `https://yourusername.github.io/repository-name/`
+---
 
-## Browser Compatibility
+## 🚀 Run Inference
 
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
+Once setup is complete, run the OCR app:
 
-## License
+```bash
+python app.py
+```
 
-This project is open source and available under the [MIT License](LICENSE).
+You'll be prompted to enter the path of an image. The model will output the predicted text.
+
+---
+
+## 📦 Student Model
+
+The distilled OCR model is hosted on Hugging Face:
+
+➡️ [https://huggingface.co/Aanal21/StudentModel-EdgeOCR](https://huggingface.co/Aanal21/TeacherModel-EdgeOCR)
+
+The model is automatically downloaded and cached using `from_pretrained()` during inference.
+
+---
+
+## 📁 Folder Structure
+
+```bash
+OCR-Edge/
+├── app.py                 # Inference script
+├── Student/              # Placeholder for local models (optional)
+├── utils/                # Utilities (if applicable)
+├── README.md             # This file
+├── requirements.txt      # Dependencies
+```
+
+---
+
+## 📄 TODO
+
+* [ ] Add Web UI (in progress)
+* [ ] Improve model accuracy with more diverse training data
+* [ ] Optimize model for mobile deployment
+
+---
+
+## 📬 Contact
+
+Feel free to reach out or open an issue if you have questions!
+
+👤 [Aanal Patel](https://github.com/Aanalpatel99)
+📧 [aanalpatel445566@gmail.com](mailto:aanalpatel445566@gmail.com)
+or reachout to me on linkedin
+
+---
+
+## 📜 License
+
+MIT License – use it, modify it, share it!
