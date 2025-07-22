@@ -75,7 +75,9 @@ document.addEventListener('DOMContentLoaded', function() {
         preview.src = imageSrc;
         preview.alt = 'Receipt Preview';
         // Insert after file input
-        imageInput.parentNode.insertBefore(preview, scanBtn);
+        const previewContainer = document.getElementById('image-preview-container');
+        previewContainer.innerHTML = '';  // Clear previous previews
+        previewContainer.appendChild(preview);
         console.log('Preview image inserted');
     }
 

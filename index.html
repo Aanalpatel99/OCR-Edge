@@ -11,9 +11,14 @@
 <body>
     <div class="container">
         <h1>Receipt Scanner</h1>
-        <button id="uploadBtn">Upload Receipt</button>
-        <input type="file" id="imageInput" accept="image/*" capture style="display:none;">
-        <button id="scanBtn">Scan Receipt</button>
+        <div class="button-group">
+            <button id="uploadBtn">Upload Receipt</button>
+            <input type="file" id="imageInput" accept="image/*" capture style="display:none;">
+            <button id="scanBtn">Scan Receipt</button>
+        </div>
+        
+        <div id="image-preview-container"></div>
+        
         <div id="result">
             <h2>Extracted Text</h2>
             <pre id="ocrText">Upload a receipt image to get started...</pre>

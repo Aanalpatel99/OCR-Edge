@@ -19,13 +19,19 @@ body {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     padding: 40px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 8px 32px rgba(0,0,0,0.2);
     max-width: 600px;
     width: 100%;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.3);
 }
 
 h1 {
@@ -37,6 +43,14 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
 button {
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
     border: none;
@@ -46,18 +60,20 @@ button {
     font-size: 1em;
     font-weight: 600;
     cursor: pointer;
-    margin: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(255,126,95,0.4);
 }
 
 button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(255,126,95,0.4);
+    transform: scale(1.08);
+    box-shadow: 0 8px 25px rgba(255,126,95,0.5);
 }
 
 button:disabled {
     background: #888;
+    box-shadow: none;
     cursor: not-allowed;
+    transform: none;
 }
 
 #ocrText {
@@ -72,6 +88,7 @@ button:disabled {
     white-space: pre-wrap;
     max-height: 400px;
     overflow-y: auto;
+    transition: background 0.3s ease;
 }
 
 .preview-image {
@@ -80,11 +97,14 @@ button:disabled {
     border-radius: 15px;
     margin: 20px 0;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease;
+    transition: all 0.5s ease;
+    opacity: 0;
+    transform: scale(0.95);
 }
 
-.preview-image:hover {
-    transform: scale(1.02);
+.preview-image.show {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .loading.show {
@@ -101,6 +121,7 @@ button:disabled {
     width: 40px;
     height: 40px;
     animation: spin 1s linear infinite;
+    margin-bottom: 10px;
 }
 
 @keyframes spin {
@@ -117,8 +138,11 @@ button:disabled {
         font-size: 2em;
     }
 
+    .button-group {
+        flex-direction: column;
+    }
+
     button {
         width: 100%;
-        margin: 8px 0;
     }
 }
